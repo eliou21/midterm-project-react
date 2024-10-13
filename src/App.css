@@ -1,0 +1,394 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E5C9B3;
+}
+
+.App {
+  padding: 20px;
+  background-image: url('./components/images/background main 3.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* WELCOME PAGE */
+
+.welcome-background{
+  background-image: url('./components/images/background orange.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  z-index: 1000;
+  color: white;
+}
+
+.welcome-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./components/images/background orange.gif') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+.welcome-container h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 5.7em;
+  color: #160c06;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.welcome-container button {
+  padding: 7px 20px;
+  font-size: 2em;
+  background-color: #44565A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.welcome-container button:hover {
+  background-color: #13242B;
+}
+
+/* NAVBAR */
+
+.navbar-logo {
+  margin-right: 20px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: #13242B;
+  margin: 0 auto;
+  padding: 10px; 
+  border-radius: 8px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px 15px;
+  border: 2px solid transparent;
+  border-radius: 8px; 
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.navbar a:hover {
+  background-color: #d1d1c6;
+  border-color: white; 
+  border-radius: 8px;
+  color: #000000;
+}
+
+/* EXIT BUTTON */
+
+.button-exit {
+  font-size: 1em;
+  font-weight: bold;
+  background-color: white;
+  color: #13242B; 
+  padding: 1.5px 15px;
+  border: 2px solid #061f27; 
+  border-radius: 5px;
+  cursor: pointer; 
+  align-self: center;
+  margin-top: -3px;
+  margin-left: 35px;
+}
+
+.button-exit:hover {
+  background-color: #13242B;
+  color: white;
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto 20px auto;
+  padding: 20px; 
+  width: 100%; 
+  max-width: 600px;
+  background-color: #21343A; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(131, 131, 131, 0.923);
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-label {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.form-id {
+  flex: 1;
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 65%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* FORM BUTTON */
+
+.form-button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 3px solid #061f27;
+  border-radius: 8px;
+  background-color: rgb(235, 235, 235);
+  color:#21343A;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.form-button:hover {
+  background-color: #21343A;
+  color: white;
+}
+
+/* DISPLAY ITEMS PAGE */
+
+.display-items ul {
+  margin-top: 20px;
+}
+
+.display-items h2 {
+  color: #007bff;
+}
+
+/* SEARCH ITEM PAGE */
+
+.search-item {
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 24.5px;
+}
+
+.search-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-item li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* LOW STOCK ITEMS */
+
+.low-stock-items ul {
+  margin-top: 20px;
+}
+
+.low-stock-items li {
+  background-color: #ffcccb;
+}
+
+/* SORTING ITEMS PAGE */
+
+.sort-item-container {
+  margin: 20px;
+}
+
+.sort-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sort-items select {
+  margin: 20px 0;
+}
+
+.sort-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e07c1f;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.sort-button:hover {
+  background-color: #ffa041;
+}
+
+/* Sort by Category */
+
+.select-cat {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* LABELS */
+
+.label{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #13242B;
+  margin-top: 35px;
+}
+
+/* TABLES */
+
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 3px solid #ddd;
+  border-radius: 15px; 
+  padding: 10px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-action {
+  display: flex;
+  justify-content: right;
+  background-color: #e5e5e58a;
+  padding: 2px 15px;
+  border: 3px solid white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.dropdown {
+  padding: 5px ;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 29px;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 14.5px;
+}
+
+.dropdown:hover {
+  background-color: #eaeaea;
+}
+
+.dropdown option{
+  padding: 10px;
+  font-size: 14px;
+}
+
+.table-button {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #13242B;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 130px;
+}
+
+.table-button:hover {
+  background-color: #44565A;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  color: #d1d1c6;
+}
+
+th, td {
+  padding: 10px;
+  border: 2px solid #ddd;
+}
+
+thead th {
+  position: sticky; 
+  top: 0;
+  background-color: #13242B;
+  z-index: 1;
+}
+
+tbody td {
+  color: #13242B; 
+  text-align: center;
+}
+
+tbody tr {
+  background-color: #ebebeb; 
+}
+
+tbody tr:hover {
+  background-color: #d2d2d2;
+}
